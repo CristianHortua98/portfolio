@@ -1,4 +1,3 @@
-import { Button } from "./components/ui/button"
 import { About } from "./sections/About"
 import { Contact } from "./sections/Contact"
 import { Header } from "./sections/Header"

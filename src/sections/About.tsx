@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge"
 import { BadgedSection } from "./components/BadgedSection"
 import { habilidadesBlandas } from "@/data/data-portfolio"
 import { BadgeHabilidadBlanda } from "./components/BadgeHabilidadBlanda"
