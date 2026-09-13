@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { BadgedSection } from "./components/BadgedSection"
+import { fullName, imgTecnologiasFav, role } from "@/data/data-portfolio"
 
 export const Home = () => {
     return (
@@ -8,9 +9,9 @@ export const Home = () => {
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 pt-10 pb-10 md:pt-16 md:pb-16">
                         <div>
-                            <BadgedSection title="DESARROLLADOR FULL STACK"/>
-                            <p className="text-6xl mt-8 mb-4 text-white">Hola, soy <span className="text-danger-custom font-bold">Cristian</span></p>
-                            <p className="text-white text-3xl mb-3">Construyo soluciones para la web.</p>
+                            <BadgedSection title={role.toUpperCase()}/>
+                            <h1 className="text-6xl mt-8 mb-4 text-white">Hola, soy <span className="text-danger-custom font-bold">{ fullName.split(' ')[0] }</span></h1>
+                            <h2 className="text-white text-3xl mb-3">Construyo soluciones para la web.</h2>
                             <p className="text-white text-lg mb-6">Desarrollador apasionado por crear aplicaciones modernas, funcionales y eficientes utilizando tecnologías actuales.</p>
                             <a download href="/public/hv.pdf">
                                 <Button className="bg-secondary-custom text-white border-secondary-custom hover:bg-danger-custom cursor-pointer text-base sm:text-xl px-5 py-4 sm:p-6">
@@ -22,17 +23,13 @@ export const Home = () => {
                                 </Button>
                             </a>
                             <div className="mt-8">
-                                <p className="text-white mb-4 font-bold">Tecnologias con las que trabajo</p>
-
+                                <h3 className="text-white mb-4 font-bold">Tecnologias con las que trabajo</h3>
                                 <div className="flex flex-wrap gap-4 sm:gap-5 max-w-xl">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" className="w-10 h-10 sm:w-12 sm:h-12" alt="Typescript"/>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" className="w-10 h-10 sm:w-12 sm:h-12" alt="Javascript"/>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" className="w-10 h-10 sm:w-12 sm:h-12" alt="React"/>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" className="w-10 h-10 sm:w-12 sm:h-12" alt="Angular"/>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original-wordmark.svg" className="w-10 h-10 sm:w-12 sm:h-12" alt="NestJS"/>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg" className="w-10 h-10 sm:w-12 sm:h-12" alt="NodeJS"/>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" className="w-10 h-10 sm:w-12 sm:h-12" alt="PHP"/>
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" className="w-10 h-10 sm:w-12 sm:h-12" alt="Git"/>
+                                    {
+                                        imgTecnologiasFav.map((img, index) => (
+                                            <img key={index} src={img.linkImg} className="w-10 h-10 sm:w-12 sm:h-12" alt={img.name}/>
+                                        ))
+                                    }
                                 </div>
                             </div>
                         </div>

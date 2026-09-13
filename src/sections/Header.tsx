@@ -30,15 +30,15 @@ export const Header = () => {
                         Sobre Mi
                     </a>
 
-                    <a href="tecnologias" className="text-sm font-medium text-white transition-all duration-200 hover:text-danger-custom hover:underline hover:underline-offset-8">
+                    <a href="#tecnologias" className="text-sm font-medium text-white transition-all duration-200 hover:text-danger-custom hover:underline hover:underline-offset-8">
                         Tecnologias
                     </a>
 
-                    <a href="proyectos" className="text-sm font-medium text-white transition-all duration-200 hover:text-danger-custom hover:underline hover:underline-offset-8">
+                    <a href="#proyectos" className="text-sm font-medium text-white transition-all duration-200 hover:text-danger-custom hover:underline hover:underline-offset-8">
                         Proyectos
                     </a>
 
-                    <a href="contacto" className="text-sm font-medium text-white transition-all duration-200 hover:text-danger-custom hover:underline hover:underline-offset-8">
+                    <a href="#contacto" className="text-sm font-medium text-white transition-all duration-200 hover:text-danger-custom hover:underline hover:underline-offset-8">
                         Contacto
                     </a>
                 </nav>
