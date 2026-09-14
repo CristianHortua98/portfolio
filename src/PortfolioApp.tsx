@@ -16,7 +16,7 @@ export const PortfolioApp = () => {
 
       <Skills/>
 
-      {/* <Projects/> */}
+      <Projects/>
 
       <Contact/>
     </>
