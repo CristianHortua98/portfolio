@@ -1,7 +1,7 @@
 import { BadgedSection } from "./components/BadgedSection"
 import { fullName, habilidadesBlandas, role } from "@/data/data-portfolio"
-import { BadgeHabilidadBlanda } from "./components/BadgeHabilidadBlanda"
 import { Badge } from "@/components/ui/badge"
+import { BadgeHability } from "./components/BadgeHability"
 
 export const About = () => {
   return (
@@ -34,7 +34,7 @@ export const About = () => {
                 <div className="flex flex-wrap gap-2 sm:gap-2 max-w-xl">
                   {
                     habilidadesBlandas.map((habilidad, index) => (
-                      <BadgeHabilidadBlanda key={index} title={habilidad}/>
+                      <BadgeHability key={index} title={habilidad}/>
                     ))
                   }
                 </div>

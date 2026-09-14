@@ -1,6 +1,6 @@
 import { BadgedSection } from "./components/BadgedSection"
 import { tecnologias } from "@/data/data-portfolio"
-import { SeccionTecnologia } from "./components/SeccionTecnologia"
+import { SectionTecnology } from "./components/SectionTecnology"
 
 export const Skills = () => {
 
@@ -15,9 +15,9 @@ export const Skills = () => {
               <h2 className="text-white text-2xl font-bold text-center mb-4">Tecnologías</h2>
               <p className="text-sm text-center text-white mb-4">Herramientas y tecnologias que utilizo para construir soluciones modernas, escalables y de alto rendemiento.</p>
 
-              <SeccionTecnologia title="Frontend" tecnologias={tecnologias.frontend}/>
-              <SeccionTecnologia title="Backend" tecnologias={tecnologias.backend}/>
-              <SeccionTecnologia title="Otros" tecnologias={tecnologias.otros}/>
+              <SectionTecnology title="Frontend" tecnologies={tecnologias.frontend}/>
+              <SectionTecnology title="Backend" tecnologies={tecnologias.backend}/>
+              <SectionTecnology title="Otros" tecnologies={tecnologias.otros}/>
 
             </div>
           </div>
