@@ -152,18 +152,18 @@ export const proyectos: Project[] = [
         title: 'Kanban App',
         description: 'Aplicación full-stack diseñada para la administración y seguimiento de flujo de trabajo en tiempo real, desarrollada con Angular en el frontend y NestJS en el backend.',
         tecnologies: ['Angular', 'NestJS', 'Typescript', 'Jest', 'TypeORM', 'MySQL'],
-        image: '/public/kanbanapp.png'
+        image: '/kanbanapp.png'
     },
     {
         title: 'Heroes App',
         description: 'Aplicación full-stack diseñada para la visualizacion de heroes y sus estadisticas, desarrollada con React en el frontend y NestJS en el backend.',
         tecnologies: ['React', 'TanstackQuery', 'Typescript', 'Shadcn', 'NestJS', 'Vitest'],
-        image: '/public/heroesapp.png'
+        image: '/heroesapp.png'
     },
     {
         title: 'Ventas App',
         description: 'Aplicación de ventas full-stack desarrollada con React en el frontend y NestJS en el backend, con visualización dinámica de productos y gestión de carrito de compras.',
         tecnologies: ['React', 'NestJS', 'Typescript', 'Shadcn', 'Zustand', 'PostgreSQL'],
-        image: '/public/ventasapp.png'
+        image: '/ventasapp.png'
     },
 ]
