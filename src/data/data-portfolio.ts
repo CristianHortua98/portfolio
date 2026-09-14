@@ -1,11 +1,16 @@
 
 
-export const fullName = 'Cristian Alejandro Hortua Saenz';
-export const role = 'Ingeniero de Software | Senior Fullstack Developer';
+export const fullName: string = 'Cristian Alejandro Hortua Saenz';
+export const role: string = 'Ingeniero de Software | Senior Fullstack Developer';
 
-export const habilidadesBlandas = ['Liderazgo', 'Mentoría Técnica', 'Análisis y resolución de problemas', 'Pensamiento crítico', 'Orientación a resultados', 'Mejora continua', 'Adaptabilidad', 'Enfoque en objetivos', 'Comunicación efectiva en equipos ágiles'];
+export const habilidadesBlandas: string[] = ['Liderazgo', 'Mentoría Técnica', 'Análisis y resolución de problemas', 'Pensamiento crítico', 'Orientación a resultados', 'Mejora continua', 'Adaptabilidad', 'Enfoque en objetivos', 'Comunicación efectiva en equipos ágiles'];
 
-export const imgTecnologiasFav = [
+interface imgTecnologiaFav {
+    name: string;
+    linkImg: string;
+}
+
+export const imgTecnologiasFav: imgTecnologiaFav[] = [
     {
         name: 'Typescript',
         linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg'
@@ -38,4 +43,99 @@ export const imgTecnologiasFav = [
         name: 'PostgreSQL',
         linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg'
     },
-]
+];
+
+export interface Tecnologia{
+    name: string;
+    linkImg: string;
+    progress: number;
+}
+
+export const tecnologias = {
+    frontend: [
+        {
+            name: 'Angular',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg',
+            progress: 90
+        },
+        {
+            name: 'Ract',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+            progress: 85
+        },
+        {
+            name: 'Typescript',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+            progress: 85
+        },
+        {
+            name: 'Javascript',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+            progress: 90
+        },
+        {
+            name: 'Tailwind CSS',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+            progress: 90
+        },
+        {
+            name: 'Bootstrap',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg',
+            progress: 90
+        },
+        {
+            name: 'HTML',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+            progress: 85
+        },
+        {
+            name: 'CSS',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+            progress: 80
+        },
+    ],
+    backend: [
+        {
+            name: 'Node.js',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg',
+            progress: 85
+        },
+        {
+            name: 'NestJS',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nestjs/nestjs-original-wordmark.svg',
+            progress: 90
+        },
+        {
+            name: 'PHP',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
+            progress: 95
+        },
+        {
+            name: 'MySQL',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg',
+            progress: 85
+        },
+        {
+            name: 'PostgreSQL',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-plain-wordmark.svg',
+            progress: 85
+        },
+    ],
+    otros: [
+        {
+            name: 'Git',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+            progress: 90
+        },
+        {
+            name: 'Jest',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
+            progress: 90
+        },
+        {
+            name: 'Vitest',
+            linkImg: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitest/vitest-original.svg',
+            progress: 90
+        },
+    ],
+}
