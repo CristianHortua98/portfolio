@@ -10,7 +10,8 @@ export const Projects = () => {
           <div className="flex justify-center mb-4">
             <BadgedSection title="PROYECTOS"/>
           </div>
-          <h2 className="text-2xl text-white font-bold text-center mb-6">Mis Proyectos</h2>
+          <h2 className="text-2xl text-white font-bold text-center mb-4">Mis Proyectos</h2>
+          <p className="text-sm text-center text-white mb-4">Aquí puedes ver algunos de los proyectos que he construido.</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
             {

@@ -145,6 +145,8 @@ export interface Project {
     description: string;
     tecnologies: string[];
     image: string;
+    urlBackend: string;
+    urlFrontend: string;
 }
 
 export const proyectos: Project[] = [
@@ -152,18 +154,24 @@ export const proyectos: Project[] = [
         title: 'Kanban App',
         description: 'Aplicación full-stack diseñada para la administración y seguimiento de flujo de trabajo en tiempo real, desarrollada con Angular en el frontend y NestJS en el backend.',
         tecnologies: ['Angular', 'NestJS', 'Typescript', 'Jest', 'TypeORM', 'MySQL'],
-        image: '/kanbanapp.png'
+        image: '/kanbanapp.png',
+        urlBackend: 'https://github.com/CristianHortua98/kanban-backend',
+        urlFrontend: 'https://github.com/CristianHortua98/kanban-frontend'
     },
     {
         title: 'Heroes App',
         description: 'Aplicación full-stack diseñada para la visualizacion de heroes y sus estadisticas, desarrollada con React en el frontend y NestJS en el backend.',
         tecnologies: ['React', 'TanstackQuery', 'Typescript', 'Shadcn', 'NestJS', 'Vitest'],
-        image: '/heroesapp.png'
+        image: '/heroesapp.png',
+        urlBackend: 'https://github.com/CristianHortua98/heroes-app-nest',
+        urlFrontend: 'https://github.com/CristianHortua98/heroes-app-react'
     },
     {
         title: 'Ventas App',
         description: 'Aplicación de ventas full-stack desarrollada con React en el frontend y NestJS en el backend, con visualización dinámica de productos y gestión de carrito de compras.',
         tecnologies: ['React', 'NestJS', 'Typescript', 'Shadcn', 'Zustand', 'PostgreSQL'],
-        image: '/ventasapp.png'
+        image: '/ventasapp.png',
+        urlBackend: 'https://github.com/CristianHortua98/ventas-backend',
+        urlFrontend: 'https://github.com/CristianHortua98/ventas-frontend'
     },
 ]
