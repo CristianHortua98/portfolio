@@ -43,18 +43,6 @@ export const Header = () => {
                     </a>
                 </nav>
 
-
-                {/* Search and Cart */}
-                <div className="hidden md:flex items-center space-x-4">
-                    <Button variant="outline" className="ml-2 bg-secondary-custom text-white border-secondary-custom hover:bg-danger-custom cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
-                            <path d="M0 0h24v24H0z" fill="none" />
-                            <path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z" />
-                        </svg>
-                        Contactame
-                    </Button>
-                </div>
-
                 <button type="button" onClick={() => setIsMenuOpen(!isMenuOpen)} className=" md:hidden ml-auto flex items-center justify-center w-10 h-10 text-white hover:text-danger-custom transition-colors cursor-pointer" aria-label="Abrir menú" aria-expanded={isMenuOpen}>
                     {isMenuOpen ? (
                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -92,11 +80,6 @@ export const Header = () => {
                     <a href="#contacto" onClick={closeMenu} className="text-white hover:text-danger-custom transition-colors">
                         Contacto
                     </a>
-
-                    <Button onClick={closeMenu} className="w-full max-w-xs bg-secondary-custom text-white border-secondary-custom hover:bg-danger-custom cursor-pointer">
-                        Contactame
-                    </Button>
-
                 </nav>
             </div>
         </div>

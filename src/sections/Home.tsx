@@ -34,7 +34,12 @@ export const Home = () => {
                             </div>
                         </div>
                         <div className="hidden md:flex items-center justify-center">
-                            <p className="text-3xl text-white">Imagen</p>
+                            {/* <div className="mask-x-from-70% mask-x-to-90% bg-[url(/header.jpg)]"></div> */}
+                            <div className="relative h-96 w-full overflow-hidden">
+                                <div className="absolute inset-0 bg-[url('/header2.jpg')] bg-cover bg-center" />
+                                <div className="absolute inset-0 bg-linear-to-r from-primary-custom via-transparent to-primary-custom" />
+                            </div>
+                            {/* <img src="/header.jpg" className="mask-[url(/header.jpg)] bg-[url(/header.jpg)]"></img> */}
                         </div>
                     </div>
                 </div>
